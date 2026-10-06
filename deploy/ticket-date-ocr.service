@@ -1,0 +1,18 @@
+[Unit]
+Description=ticket-date-ocr
+After=network.target
+
+[Service]
+Type=simple
+User=ocr
+WorkingDirectory=/opt/ticket-date-ocr
+EnvironmentFile=/opt/ticket-date-ocr/.env
+ExecStart=/usr/bin/node --max-old-space-size=512 server.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/ticket-date-ocr
+
+[Install]
+WantedBy=multi-user.target

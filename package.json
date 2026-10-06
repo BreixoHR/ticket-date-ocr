@@ -1,0 +1,23 @@
+{
+  "name": "ticket-date-ocr",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Extrae la fecha de visita de entradas en PDF (OCR + capa de texto) y la valida contra Salesforce",
+  "main": "server.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "oci-aidocument": "^2.142.1",
+    "oci-common": "^2.142.1",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^2.4.5"
+  }
+}

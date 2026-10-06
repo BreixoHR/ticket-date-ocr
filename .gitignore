@@ -1,0 +1,10 @@
+node_modules/
+.env
+.oci/
+*.pem
+*.pdf
+*.log
+.sf/
+.sfdx/
+salesforce/.sf/
+salesforce/.sfdx/
